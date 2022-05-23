@@ -36,6 +36,7 @@ body{
     color: #754996;
 }
 
+
 .produtos{
     background-color: aqua;
 }
@@ -43,6 +44,28 @@ body{
 .titulo-produtos{
     text-align: center;
     color: rgb(122, 143, 143);
+}
+
+.texto-produtos{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Calibri';
+    color: rgb(122, 143, 143);
+}
+
+.comprar{
+    background-color: white;
+}
+
+.titulo-comprar{
+    text-align: center;
+    color: black;
+}
+
+.texto-comprar{
+    color: black;
+    padding-bottom: 30px;
+    font-family: 'Calibri';
 }
 
 .img{
@@ -58,4 +81,21 @@ body{
 
 .plane{
     padding-top: 90px;
+}
+
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+}
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zoom:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
