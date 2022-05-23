@@ -59,13 +59,22 @@ body{
 
 .titulo-comprar{
     text-align: center;
-    color: black;
+    color: #161B22;
 }
 
 .texto-comprar{
-    color: black;
+    color: #161B22;
     padding-bottom: 30px;
     font-family: 'Calibri';
+}
+
+.devby{
+    background-color: #161B22;
+}
+
+.texto-devby{
+    color: aqua;
+    text-align: right;
 }
 
 .img{
