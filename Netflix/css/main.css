@@ -89,6 +89,7 @@ header nav a:hover{
 .botao:hover{
     background-color: white;
     color: black;
+
 }
 
 .botao i{
@@ -101,4 +102,12 @@ header nav a:hover{
 
 .filme-principal .container{
     width: 70%;
+}
+
+.box-filme{
+    margin-top: 15px;
+    height: 50%; 
+    /* width: 30px; */
+    display: block; 
+
 }
