@@ -5,7 +5,7 @@
 
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -16,8 +16,9 @@ body{
 }
 
 
-
 /* Elementos Base */
+
+
 
 header .container{
     display: flex;
@@ -89,7 +90,6 @@ header nav a:hover{
 .botao:hover{
     background-color: white;
     color: black;
-
 }
 
 .botao i{
@@ -105,9 +105,38 @@ header nav a:hover{
 }
 
 .box-filme{
-    margin-top: 15px;
-    height: 50%; 
-    /* width: 30px; */
+    height: 100%; 
+    width: 100%; 
     display: block; 
+}
 
+.carrosel-filmes{
+    margin-top: 15px;
+}
+
+.carrosel-filmes-destaques{
+    margin-top: 50px;
+    margin-left: 8px;
+}
+
+/* footer */
+
+.iconfooter{
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    background-color: var(--vermelho);
+    cursor: pointer;
+    margin-left: 8px;
+    border: none;
+    transition: .3s ease all;
+    border-radius: 10px 10px;
+}
+
+.iconfooter:hover{
+    background-color: white;
+}
+
+footer p{
+    margin-left: 5px;
+    font-size: 10px;
 }
