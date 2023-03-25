@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+.navbar-brand{
+    width: 50px;
+}
+
+.carousel-inner{
+    width: 700px;
+ 
+}
+
+h1{
+    color: whitesmoke;
+}
+
