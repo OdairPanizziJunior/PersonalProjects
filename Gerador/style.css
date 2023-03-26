@@ -1,0 +1,110 @@
+*{
+    font-family: sans-serif; /*remove serifas do caractere*/
+    width: 100%; 
+    margin: 0 auto; /*zero e automático na esquerda e direita*/
+    box-sizing: border-box;
+}
+
+body { /*configura todo o body*/
+    background-color: #18181B;
+    width: 100%; /*largura*/
+    height: 100vh; /*altura de 100 view hight*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*um item abaixo do outro*/
+}
+
+.logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container-input{
+    max-width: 480px; /*isso para ficar menor que a logo*/
+    margin: 14px 0; /*14px cima e baixo - zero esquerda e direita*/
+}
+
+.container-input span{ /*pegou somente o SPAN de forma genérica*/
+    color:#ffffff;
+    font-size: 22px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #DFDFDF; /*pra mexer no fundo do slider*/
+    height: 18px;
+    outline: none;
+    margin-top: 8px; /*para afastar da frase "tamanho Caracteres"*/
+}
+
+.button-cta{
+    height: 40px; /*altura do botão*/
+    background-color: #3EB72B;
+    border: 0; /*tirar a borda*/
+    border-radius: 4px;
+    cursor: pointer; /*colocar cursos da mãosinha*/
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-password{ /*ver que fica no entorno de toda DIV*/
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex; /*elementos responsivos são organizados automaticamente*/
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0,0,0, 0.40); /*permite transparência*/
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #313131;
+    transition: transform 0.5s; /*efeito de aumentar mas com lentidão*/
+}
+
+.password:hover{ /*para fazer um efeito ao passar com o mouse*/
+    transform: scale(1.05);
+
+}
+
+.tooltip{
+    color: white;
+    position: relative;
+    top: 20px; /*como se fosse margin top*/
+    padding: 6px 8px; /*6 cima/baixo 8 direita/esrda*/
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden; /*oculta a div*/
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}

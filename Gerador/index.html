@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de Senhas, gerador password"> <!-- usdada p/ google localizar melhor o site -->
+    <title>Gerador de Senha</title>
+
+    <link rel="stylesheet" href="style.css"> <!--link direto para o CSS-->
+
+</head>
+<body>
+    <img class="logo" src="./assets/logo.png" alt="gerador de senha logo"> <!--Defina uma class para poder usar depois-->
+    
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> Caracteres </span> <!--tamanho da senha/id como será dinâmico a gente vai precisar saber depois-->
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15"/> <!--Esse é o botão de deslizar-->
+        <button id="button" class="button-cta">Gerar Senha</button> <!--Esse é o botão para confirmar-->
+    </main> 
+
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password">1561654532415651</span>
+        <span class="tooltip">Clique na senha para copiar ☝️</span>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
