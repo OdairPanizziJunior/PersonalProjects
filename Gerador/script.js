@@ -11,4 +11,17 @@ let containerPassword = document.querySelector("#container-password"); //pegar o
 let charset = "abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ0123456789!@"; //intervalo de caracteres que podem ser gerados
 let novaSenha = ""; //vazio pq ainda não foi gerada
 
+sizePassword.innerHTML = sliderElement.value; //exibe o tamanho setado em "value"
 
+sliderElement.oninput = function(){
+    sizePassword.innerHTML = this.value; //passando para o sizePassword o valor que tem atualmente
+}
+
+
+// sliderElement.value
+// pega o tamanho que o usuário está passando na barra
+
+
+function generatePassword(){
+    alert("Vamos gerar a senha!");
+}
