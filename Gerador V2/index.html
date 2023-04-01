@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator V2</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function generatePassword() {
+      var length = document.getElementById("length").value;
+      var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]|;:<>,.?/";
+      var password = "";
+      for (var i = 0; i < length; i++) {
+        password += charset.charAt(Math.floor(Math.random() * charset.length));
+      }
+      document.getElementById("password").value = password;
+    }
+  </script>
+</head>
+
+<body>
+    <img class="logo" src="/PersonalProjects/Gerador V2/logo_v2.png">
+
+  <form>
+    <label for="length">Password Length:</label>
+    <input type="number" id="length" name="length" value="8" min="1" max="100">
+    <br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" readonly>
+    <br>
+    <button type="button" onclick="generatePassword()">Generate Password</button>
+  </form>
+</body>
+
+
+</html>
