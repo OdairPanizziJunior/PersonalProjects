@@ -23,5 +23,22 @@ sliderElement.oninput = function(){
 
 
 function generatePassword(){
-    alert("Vamos gerar a senha!");
+    let pass = "";
+    for(let i = 0, n = charset.length; i < sliderElement.value; ++i){ //começa em 0 e vai passar dentro do FOR até que for menor que o slider
+        pass += charset.charAt(Math.floor(Math.random() * n));
+        // O charArt é para pegar a posição da string "CHARSET"
+    }
+    //console.log(pass);
+    //alert("Sua senha é:       " + pass);
+    containerPassword.classList.remove("hide");
+    password.innerHTML = pass;
+    novaSenha = pass;
 }
+
+
+function copyPassword(){
+    alert("Senha copiada com Sucesso!");
+    navigator.clipboard.writeText(novaSenha);
+}
+
+//https://www.youtube.com/watch?v=i6t2jaRxos4
