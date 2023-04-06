@@ -3,31 +3,35 @@
 <head>
   <title>Password Generator V2</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function generatePassword() {
-      var length = document.getElementById("length").value;
-      var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]|;:<>,.?/";
-      var password = "";
-      for (var i = 0; i < length; i++) {
-        password += charset.charAt(Math.floor(Math.random() * charset.length));
-      }
-      document.getElementById("password").value = password;
-    }
-  </script>
+  
 </head>
 
 <body>
+
     <img class="logo" src="/PersonalProjects/Gerador V2/logo_v2.png">
 
   <form>
-    <label for="length">Password Length:</label>
+    <label for="length">TAMANHO DA SENHA:</label>
     <input type="number" id="length" name="length" value="8" min="1" max="100">
     <br>
-    <label for="password">Password:</label>
+    <label for="password">RESULTADO:</label>
     <input type="text" id="password" name="password" readonly>
     <br>
-    <button type="button" onclick="generatePassword()">Generate Password</button>
-  </form>
+  
+    <div class="container">
+        <div class="center">
+          <button class="btn" type="button" onclick="generatePassword()">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>GERAR</span>
+          </button>
+        </div>
+      </div>
+</form>
+
+  <script src="script.js"></script>
 </body>
 
 
