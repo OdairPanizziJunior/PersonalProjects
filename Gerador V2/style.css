@@ -1,7 +1,11 @@
 *{
     font-family: sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
     margin: 0 auto;
     box-sizing: border-box;
+   
+
 }
 
 body{
@@ -20,34 +24,47 @@ body{
     display: flex;
 }
 
+.container-form1{
+    height: 140px;
+}
+
+
+.label-number{
+    max-width: 100%;
+    height: 60px;
+    text-align: center;
+
+    border-radius: 20px;
+    font-size: large;
+    border-style: ridge;
+}
+
+.container-form2{
+    margin-top: 0;
+    height: 230px;
+}
+
+.label-senha{
+    max-width: 100%;
+    text-align: center;
+}
 
 .container {
-    width: 400px;
-    height: 400px;
-    position: absolute;
+   
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
-  .center { /*efeito do botão*/
-    width: 180px; 
-    height: 60px;
-    position: absolute;
-  }
-  
-  .btn {
+ .btn {
     width: 180px;
     height: 60px;
     cursor: pointer;
-    background: transparent;
+    background: tomato;
     border: 1px solid #646464;
     outline: none;
     transition: 1s ease-in-out;
-  }
+   }
   
   svg {
     position: absolute;
